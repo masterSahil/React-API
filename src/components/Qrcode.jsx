@@ -8,7 +8,7 @@ const Qrcode = () => {
   const [image, setImage] = useState('');
   const [text, setText] = useState('');
   const [color, setColor] = useState('black'); 
-  const [size, setSize] = useState('300x300');
+  const [size, setSize] = useState('200x200');
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
