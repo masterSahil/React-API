@@ -1,0 +1,67 @@
+*{
+    text-decoration: none;
+}
+.thumbnail{
+    height: 20vw;
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    width: 23vw;
+    border: 1px solid;
+    min-height: 35vw;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project-name{
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+.project-description{
+    text-align: justify;
+    margin-top: 10px;
+}
+.project-name, .project-description{
+    color: black;
+}
+.project-info{
+    padding: 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        width: 40vw;
+        margin-bottom: 3vw;
+    }
+    .thumbnail{
+        height: 30vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 42vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card{
+        width: 44vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .card{
+        width: 80vw;
+    }
+    .thumbnail{
+        height: 50vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card{
+        width: 85vw;
+    }
+    .thumbnail{
+        height: 55vw;
+    }
+}

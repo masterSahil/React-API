@@ -1,0 +1,41 @@
+.bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.greeting{
+    text-align: center;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.even-card{
+    margin-top: 10vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .even-card{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .greeting{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .greeting{
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .br-hide{
+        display: none;
+    }
+}

@@ -1,0 +1,202 @@
+.qr-container{
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.qr-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    background: white;
+    padding: 1vw 3vw;
+    border-radius: 8px;
+}
+.qr-containing{
+    display: flex;
+}
+.qr-content{
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    display: flex;
+    align-items: center;
+}
+.qr-text{
+    width: 30vw;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    &:focus{
+        outline-color: transparent;
+    }
+}
+.clrbtn{
+    background: transparent;
+    padding: 5px;
+}
+.qr-download{
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    margin-left: 1vw;
+    border-radius: 8px;
+}
+.clr-icon{
+    font-size: 16px;
+    color: #3498db;
+}
+.functionality{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42vw;
+    margin: 1vw 0;
+}
+.theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qr-btn{
+    padding: 5px 10px;
+    margin: 0 5px;
+    background: transparent;
+    border-radius: 20px;
+}
+.btnRed{
+    border: 2px solid red;
+    color: red;
+}
+.btnGreen{
+    border: 2px solid #008000;
+    color: green;
+}
+.btnBlue{
+    border: 2px solid blue;
+    color: blue;
+}
+.btnPurple{
+    border: 2px solid purple;
+    color: purple;
+}
+.btnDefault{
+    border: 2px solid black;
+}
+.qr-size{
+    min-width: max-content;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+.qr-img-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .theme{
+        max-width: 45vw;
+    }
+    .qr-btn{
+        margin-bottom: 1vw;
+    }
+    .functionality{
+        width: 50vw;
+        justify-content: space-around;
+    }
+    .qr-main{
+        max-width: 80vw !important;
+    }
+    .sizing{
+        min-width: max-content;
+    }
+    .img-container{
+        margin: 2vw 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .qr-main{
+        width: 75vw;
+    }
+    .functionality{
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .functionality{
+        justify-content: space-between;
+    }
+    .theme{
+        max-width: 55vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .qr-btnGroup{
+        max-width: 45vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .qr-text{
+        width: 37vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .functionality{
+        flex-direction: column;
+    }
+    .size-heading{
+        margin-bottom: 1vw;
+    }
+    .qr-main{
+        width: 85vw;
+    }
+    .qr-btnGroup{
+        max-width: 75vw;
+        flex-wrap: nowrap;
+    }
+    .qr-btn{
+        padding: 5px 8px;
+    }
+    .qr-text{
+        padding: 5px;
+        font-size: 17px;
+        width: 38vw;
+    }
+    .qr-heading, .size-heading{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .qr-btnGroup{
+        flex-wrap: wrap;
+        min-width: 75vw;
+    }
+    .qr-btn{
+        margin: 0 3vw 2vw 3vw;
+    }
+    .donwload-txt{
+        display: none;
+    }
+    .qr-heading, .size-heading{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 381px) {
+    .small-visible-btn{
+        display: none;
+    }
+}

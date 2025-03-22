@@ -1,0 +1,117 @@
+.nature-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(1px);
+}
+.qoutes-container{
+    background: transparent;
+    padding: 2vw;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    color: white;
+    position: relative;
+}
+.qoutes-main{
+    margin: 0;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+}
+.qoute{
+    font-size: 32px;
+    font-family: 'Raleway';
+}
+.quotes-heading{
+    margin: 0 0 2vw 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 36px;
+}
+.qoute, .qoute-category, .qoutes-author{
+    margin: 0 2vw;
+}
+.qoute-category{
+    align-self: flex-end;
+}
+.qoutes-author{
+    margin: 1vw 0 0 0;
+    align-self: flex-end;
+}
+.qoutes-author, .qoute-category{
+    font-size: 20px;
+    font-family: 'Playwrite VN';    
+}
+.qoute-btn {
+    margin: 1vw;
+    padding: 10px 20px;
+    background: rgb(0, 68, 128);
+    color: white;
+    overflow: hidden;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.qoute-btn:hover {
+    box-shadow: 0 0 1px 2px aqua;
+}
+.qoute-btn:active{
+    transform: translateY(2px) scale(.99);
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.loader img {
+    height: 200px;
+    width: 200px;
+}
+  
+
+@media screen and (max-width: 700px) {
+    .qoutes-container{
+        width: 80vw;
+    }
+    .qoute{
+        font-size: 28px;
+    }
+    .qoutes-author, .qoute-category{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .qoute{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .qoute{
+        font-size: 22px;
+    }
+    .qoutes-author, .qoute-category{
+        font-size: 14px;
+    }
+    .qoute-btn{
+        margin: 3vw;
+    }
+    .quotes-heading{
+        font-size: 32px;
+        margin: 2vw 0 3vw 0;
+    }
+    .qoutes-container{
+        width: 85vw;
+    }
+}
