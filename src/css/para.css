@@ -52,6 +52,7 @@
   padding: 10px 0;
   border-radius: 5px;
   font-size: 16px;
+  background: transparent;
 }
 .colorField {
   transform: scale(10);
