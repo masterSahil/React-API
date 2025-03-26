@@ -14,10 +14,10 @@ const Intro = () => {
 
       <div className="cards-container">
         <Link to="/food-recipe" className='odd-card'>
-          <Cards img={foodThumb} txt="Random Recipes" />
+          <Cards img={foodThumb} txt="Recipes Generator" />
         </Link>
         <Link to="/paragraph-generator" className='even-card'>
-          <Cards img={paraThumb} txt="Random Paragraphs" />
+          <Cards img={paraThumb} txt="Paragraphs Generator" />
         </Link>
         <Link to="/qrcode-generator" className='odd-card'>
           <Cards img={qrThumb} txt="QR Code Generator" />
